@@ -1,11 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "dev": "node server.js",
     "build": "next build",
-    "dev": "next dev",
-    "prettier": "prettier --write --ignore-unknown .",
-    "prettier:check": "prettier --check --ignore-unknown .",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
