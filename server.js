@@ -1,9 +1,8 @@
 var http = require('http');
 var server = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    var message = 'It works! Umit akdeniz\n',
-        version = 'NodeJS ' + process.versions.node + '\n',
-        response = [message, version].join('\n');
+    var message = 'Umit Akdeniz\n',
+        response = [message].join('\n');
     res.end(response);
 });
 server.listen();
